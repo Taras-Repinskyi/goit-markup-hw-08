@@ -8,7 +8,7 @@
   color: #2196f3;
   text-decoration: none;
 }
-/* убрать подчеркивание ссылки на лого */
+
 .logo-part-2 {
   font-family: 'Raleway';
   font-style: normal;
@@ -18,7 +18,7 @@
   letter-spacing: 0.03em;
   color: #000000;
 }
-/* убрать подчеркивание ссылки на лого */
+
 ul {
   list-style-type: none;
 }
@@ -54,4 +54,66 @@ a {
   letter-spacing: 0.02em;
 
   color: #757575;
+}
+/* добавить ссылки на шрифты с гугл фонтс */
+.hero-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+.button {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* кнопук нужно поместить в темный фон  героя вместе с заголовком */
+.our-advantages {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.our-advantages-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.main-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
