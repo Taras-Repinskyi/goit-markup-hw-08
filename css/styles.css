@@ -11,10 +11,11 @@
 body {
   color: var(--body-text-color);
   font-family: 'Roboto', 'Raleway', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  background-color: var(--white-color);
   line-height: calc(16 / 14);
+  background-color: var(--white-color);
 }
 
 /* Шапка index.html */
@@ -32,6 +33,7 @@ body {
 .logo-web {
   color: var(--accent-color);
   font-family: 'Raleway';
+  font-style: normal;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -39,6 +41,7 @@ body {
 .logo-studio {
   color: var(--logo-black-color);
   font-family: 'Raleway';
+  font-style: normal;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -125,4 +128,49 @@ body {
 .our-team-section-title::first-letter {
   text-transform: uppercase;
 }
-/* Закончил фон секции наша команда */
+.section-title-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-transform: capitalize;
+}
+.job-title {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+.job-title-uppercase {
+  text-transform: uppercase;
+}
+.team-card {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+/* Подвал */
+footer {
+  background-color: var(--dackground-dark-color);
+}
+.logo-studio-white {
+  color: var(--white-color);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.footer-nav {
+  font-style: normal;
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
