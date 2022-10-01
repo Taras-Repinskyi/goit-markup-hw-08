@@ -48,7 +48,9 @@ body {
 }
 .nav-list {
   font-weight: 500;
+  text-transform: capitalize;
 }
+
 .nav-contact {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -174,3 +176,25 @@ footer {
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
+/* Начало портфолио */
+.button-portfolio {
+  width: 130px;
+  height: 38px;
+  left: 957px;
+  top: 174px;
+  background: var(--dackground-grey-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.button-portfolio:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+/* Закончил кнопки в портфолио */
