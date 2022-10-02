@@ -197,4 +197,27 @@ footer {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-/* Закончил кнопки в портфолио */
+/* Герой */
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  text-transform: capitalize;
+  letter-spacing: 0.06em;
+}
+.small-symbols {
+  text-transform: none;
+}
+.capital-symbols {
+  text-transform: uppercase;
+}
+.portfolio-title-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.portfolio-title-list::first-letter {
+  text-transform: uppercase;
+}
