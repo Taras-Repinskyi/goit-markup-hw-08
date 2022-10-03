@@ -10,8 +10,7 @@
 }
 body {
   color: var(--body-text-color);
-  font-family: 'Roboto', 'Raleway', sans-serif;
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -33,7 +32,6 @@ body {
 .logo-web {
   color: var(--accent-color);
   font-family: 'Raleway';
-  font-style: normal;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -41,7 +39,6 @@ body {
 .logo-studio {
   color: var(--logo-black-color);
   font-family: 'Raleway';
-  font-style: normal;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -160,7 +157,6 @@ footer {
 .logo-studio-white {
   color: var(--white-color);
   font-family: 'Raleway';
-  font-style: normal;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -178,13 +174,8 @@ footer {
 }
 /* Начало портфолио */
 .button-portfolio {
-  width: 130px;
-  height: 38px;
-  left: 957px;
-  top: 174px;
   background: var(--dackground-grey-color);
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -194,6 +185,10 @@ footer {
   text-transform: capitalize;
 }
 .button-portfolio:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.button-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
