@@ -7,13 +7,14 @@
   --dackground-light-color: #f5f5f5;
   --dackground-grey-color: #f5f4fa;
   --logo-black-color: #000000;
+  --background-button-active: #188ce8;
 }
 body {
   color: var(--body-text-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: calc(24 / 14);
   background-color: var(--white-color);
 }
 
@@ -32,6 +33,7 @@ body {
 .logo-web {
   color: var(--accent-color);
   font-family: 'Raleway';
+  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -39,18 +41,22 @@ body {
 .logo-studio {
   color: var(--logo-black-color);
   font-family: 'Raleway';
+  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
 .nav-list {
   font-weight: 500;
+  line-height: calc(16 / 14);
   text-transform: capitalize;
+  letter-spacing: 0.02em;
 }
 
 .nav-contact {
   color: var(--secondary-text-color);
   font-weight: 500;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 /* Герой */
@@ -67,6 +73,10 @@ body {
 }
 .button {
   color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -77,7 +87,7 @@ body {
 }
 
 .button:hover {
-  background-color: #61b9f3;
+  background-color: var(--background-button-active);
 }
 /* section наші переваги */
 .visually-hidden {
@@ -95,12 +105,12 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 14px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .title-description {
   color: var(--secondary-text-color);
-  font-weight: 400;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
@@ -131,11 +141,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
   text-transform: capitalize;
 }
 .job-title {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
@@ -157,6 +167,7 @@ footer {
 .logo-studio-white {
   color: var(--white-color);
   font-family: 'Raleway';
+  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
@@ -164,9 +175,6 @@ footer {
 .footer-nav {
   font-style: normal;
   color: var(--white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
 .footer-contacts {
@@ -207,7 +215,6 @@ footer {
   text-transform: uppercase;
 }
 .portfolio-title-list {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
