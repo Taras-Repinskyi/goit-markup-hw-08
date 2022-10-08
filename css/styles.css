@@ -9,6 +9,9 @@
   --logo-black-color: #000000;
   --background-button-active: #188ce8;
 }
+.habibi {
+  background-color: #000000;
+}
 body {
   color: var(--body-text-color);
   font-family: 'Roboto', sans-serif;
