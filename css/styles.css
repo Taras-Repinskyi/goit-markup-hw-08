@@ -25,8 +25,8 @@ h5,
 h6,
 p,
 ul: {
-  margin-top: 0;
-  margin-bottom: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 .list {
   padding: 0;
@@ -53,18 +53,16 @@ body {
 
 /* Шапка index.html */
 
-.container {
+.header-container {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 1200px;
+
   outline: 2px solid tomato;
 }
 .link-nav {
@@ -76,7 +74,6 @@ body {
 .site-nav {
   display: flex;
   flex-direction: row;
-  text-align: center;
   align-items: center;
 }
 .logo-web {
@@ -120,21 +117,33 @@ body {
 }
 
 /* Герой */
+.hero-container {
+}
 
 .hero {
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   background-color: var(--dackground-dark-color);
   text-align: center;
 }
 .hero-title {
+  align-items: flex-start;
+  width: 696px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
-  margin: 0;
   text-transform: uppercase;
 }
 .button {
+  display: inline-block;
+  padding-bottom: 200px;
   min-width: 216px;
   display: inline-block;
   padding: 10px 32px;
