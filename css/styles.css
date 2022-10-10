@@ -43,6 +43,7 @@ ul: {
   color: var(--accent-color);
 }
 body {
+  max-width: 1600px;
   color: var(--body-text-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -105,7 +106,6 @@ body {
   margin-right: 50px;
 }
 .nav-contact {
-  color: var(--secondary-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -118,22 +118,27 @@ body {
 
 /* Герой */
 .hero-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 94px;
+  color: var(--secondary-text-color);
+  outline: 2px solid tomato;
 }
 
 .hero {
-  width: 1600px;
-  height: 600px;
-  margin: 0 auto;
   background-color: var(--dackground-dark-color);
   text-align: center;
+  padding: 200px 0;
 }
 .hero-title {
-  align-items: flex-start;
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
@@ -142,7 +147,6 @@ body {
   text-transform: uppercase;
 }
 .button {
-  display: inline-block;
   padding-bottom: 200px;
   min-width: 216px;
   display: inline-block;
@@ -167,7 +171,26 @@ body {
 }
 
 /* section наші переваги */
-
+.our-advatages-container {
+  max-width: 1600px;
+  min-width: 1170px;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+  outline: 2px solid tomato;
+}
+.our-advantages-list {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.item-advantages:not(:last-child) {
+  margin-right: 30px;
+}
+.item-advantages {
+  width: 270px;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -181,6 +204,7 @@ body {
   margin: -1px;
 }
 .section-title {
+  margin: 0 auto;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -197,14 +221,34 @@ body {
 }
 
 /* Section чим ми займаємось */
+.we-do-container {
+  max-width: 1600px;
+  min-width: 1170px;
+  margin-bottom: 94px;
+  outline: 2px solid tomato;
+}
 
 .we-do-section-title {
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
 }
 .we-do-section-title::first-letter {
   text-transform: uppercase;
+}
+.we-do-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.we-do-item:not(:last-child) {
+  padding-right: 30px;
 }
 .our-team-section {
   background-color: var(--dackground-grey-color);
