@@ -220,7 +220,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Section чим ми займаємось */
+/* Секція чим ми займаємось */
 .we-do-container {
   max-width: 1600px;
   min-width: 1170px;
@@ -244,12 +244,17 @@ body {
 .we-do-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.we-do-item:not(:last-child) {
-  padding-right: 30px;
+.we-do-item {
+  display: flex;
 }
+
+/* Секція наша команда */
+
 .our-team-section {
   background-color: var(--dackground-grey-color);
 }
