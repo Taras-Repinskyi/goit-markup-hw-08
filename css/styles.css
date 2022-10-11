@@ -94,26 +94,21 @@ body {
   letter-spacing: 0.03em;
 }
 .nav-list {
+  display: flex;
+  margin-left: 93px;
+  gap: 50px;
   font-weight: 500;
   line-height: calc(16 / 14);
   text-transform: capitalize;
   letter-spacing: 0.02em;
-  display: flex;
-  margin-left: 93px;
-}
-.nav-list,
-.item:not(:last-child) {
-  margin-right: 50px;
 }
 .nav-contact {
+  gap: 50px;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   display: flex;
   margin-left: auto;
-}
-.mail-item {
-  padding-right: 50px;
 }
 
 /* Герой */
@@ -125,7 +120,6 @@ body {
   color: var(--secondary-text-color);
   outline: 2px solid tomato;
 }
-
 .hero {
   background-color: var(--dackground-dark-color);
   text-align: center;
@@ -173,7 +167,6 @@ body {
 /* section наші переваги */
 .our-advatages-container {
   max-width: 1600px;
-  min-width: 1170px;
   margin-left: 215px;
   margin-right: 215px;
   margin-bottom: 94px;
@@ -223,13 +216,11 @@ body {
 /* Секція чим ми займаємось */
 .we-do-container {
   max-width: 1600px;
-  min-width: 1170px;
   margin-bottom: 94px;
   outline: 2px solid tomato;
 }
 
 .we-do-section-title {
-  text-align: center;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -237,48 +228,84 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .we-do-section-title::first-letter {
   text-transform: uppercase;
 }
 .we-do-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding-left: 15px;
   padding-right: 15px;
+  justify-content: center;
 }
 .we-do-item {
   display: flex;
 }
 
 /* Секція наша команда */
+.our-team-container {
+  max-width: 1600px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0;
+  outline: 2px solid tomato;
+}
 
 .our-team-section {
+  padding-bottom: 94px;
   background-color: var(--dackground-grey-color);
 }
 .our-team-section-title {
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .our-team-section-title::first-letter {
   text-transform: uppercase;
 }
+.our-team-list {
+  display: flex;
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+}
 .section-title-team {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-transform: capitalize;
+  text-align: center;
+  justify-content: center;
 }
 .job-title {
-  color: var(--secondary-text-color);
+  margin: 0 auto;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
   text-transform: capitalize;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.team-card > img {
+  display: flex;
+  outline: 2px solid tomato;
+}
+.team-card > h3 {
+  outline: 2px solid tomato;
 }
 .job-title-uppercase {
   text-transform: uppercase;
