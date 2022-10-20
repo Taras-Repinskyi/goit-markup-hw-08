@@ -12,8 +12,10 @@ html {
   --logo-black-color: #000000;
   --background-button-active: #188ce8;
 }
+h1,
 h2,
 h3,
+h4,
 ul,
 p {
   margin: 0;
@@ -341,6 +343,42 @@ header {
   color: var(--white-color);
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.client-icon-list {
+  display: flex;
+  margin-top: 50px;
+}
+.client-icon-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  margin-right: 30px;
+}
+.client-icon-item:last-child {
+  margin-right: auto;
+}
+.client-icon-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: var(--secondary-text-color);
+}
+.client-icon-link:focus,
+.client-icon-link:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Подвал */
