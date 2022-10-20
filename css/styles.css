@@ -387,6 +387,10 @@ header {
   background-color: var(--dackground-dark-color);
   padding: 60px 0;
 }
+.footer-control-container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -413,6 +417,49 @@ header {
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
+.footer-icon-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-icon-container {
+  margin: auto;
+  width: 206px;
+  height: 80px;
+}
+.footer-icon-list {
+  display: flex;
+  gap: 10px;
+}
+.footer-icon-item {
+}
+.footer-icon-item:last-child {
+  margin-right: auto;
+}
+.footer-icon-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+  border-radius: 50%;
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-nav-icon-container {
+  margin: 0;
+  padding: 0;
+}
+
 /* Начало портфолио */
 
 .button-portfolio {
