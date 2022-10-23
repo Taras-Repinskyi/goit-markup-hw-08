@@ -336,10 +336,13 @@ header {
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
-  color: var(--white-color);
+  fill: var(--white-color);
   background-color: var(--accent-color);
   border-radius: 50%;
 }
+
+/* Клієнти */
+
 .client-title {
   font-weight: 700;
   font-size: 36px;
