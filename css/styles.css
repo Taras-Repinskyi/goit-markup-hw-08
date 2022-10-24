@@ -75,7 +75,7 @@ header {
   text-align: center;
   align-items: center;
 }
-.link-nav {
+.link-nav-opacity {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -100,6 +100,24 @@ header {
   border-radius: 2px;
   bottom: -1px;
   display: flex;
+}
+.link-nav-opacity::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  bottom: -1px;
+  display: flex;
+  opacity: 0;
+}
+.link-nav-opacity:hover::after,
+.link-nav-opacity:focus::after {
+  opacity: 1;
+  transition-property: opacity, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav {
   display: flex;
