@@ -57,7 +57,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="button">замовити послугу</button>
+          <button data-modal-open type="button" class="button-hero">Замовити послугу</button>
         </div>
       </section>
       <section class="section">
@@ -436,14 +436,18 @@
               </li>
             </ul>
           </div>
-          <form class="form">
-            <div class="footer-form-container" role="group" aria-labelledby="footer-email-form">
-              <p class="footer-email-title">підпишіться на розсилку</p>
-              <label>
-                <input class="footer-email-input" type="email" name="email" placeholder="E-mail" />
-              </label>
+          <form class="footer-form" autocomplete="off">
+            <label for="mailing">
+              <p class="footer-email-title">Підпишіться на розсилку</p>
+              <input
+                id="mailing"
+                class="footer-email-input"
+                type="email"
+                name="mailing"
+                placeholder="E-mail"
+              />
               <button class="footer-email-button" type="submit">Підписатися</button>
-            </div>
+            </label>
           </form>
         </div>
       </div>
