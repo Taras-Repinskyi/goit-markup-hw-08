@@ -454,6 +454,40 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="modal-form">
+          <div class="form-field">
+            <h5 class="modal-form-title">Залиште свої дані, ми Вам передзвонимо</h5>
+            <label for="name">Ім'я</label>
+            <input id="name" type="name" name="user-name" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input id="tel" type="tel" name="tel" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Пошта</label>
+            <input id="mail" type="email" name="mail" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="checkbox-field">
+            <input type="checkbox" name="contract-terms" id="contract" />
+            <label for="contract"
+              >Погодшуюся з розсилкою та приймаю<span
+                ><a class="contract-link" href="#">Умови договору</a></span
+              ></label
+            >
+          </div>
+        </form>
+        <button class="send-form-button" type="submit">Відправити</button>
         <button data-modal-close type="button" class="modal-close-button">
           <svg class="icon-close-button" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>

@@ -475,7 +475,7 @@ header {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 26);
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
@@ -500,7 +500,7 @@ header {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
@@ -545,18 +545,27 @@ header {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
 }
 .footer-email-input {
   width: 358px;
-  height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--dackground-dark-color);
+}
+.footer-email-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-email-input:hover,
 .footer-email-input:focus {
@@ -568,7 +577,7 @@ header {
   height: 50px;
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30 / 16);
+  line-height: 1.87;
   margin-left: 12px;
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -576,6 +585,7 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 }
 .footer-email-button:hover,
 .footer-email-button:focus {
@@ -589,7 +599,7 @@ header {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26 / 16);
+  line-height: 1.6;
   letter-spacing: 0.03em;
   border-radius: 4px;
   border: 0;
@@ -776,4 +786,11 @@ header {
   position: fixed;
   top: 14px;
   right: 14px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  resize: none;
 }
