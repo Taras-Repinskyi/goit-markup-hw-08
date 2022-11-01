@@ -437,8 +437,8 @@
             </ul>
           </div>
           <form class="footer-form" autocomplete="off">
+            <p class="footer-email-title">Підпишіться на розсилку</p>
             <label for="mailing">
-              <p class="footer-email-title">Підпишіться на розсилку</p>
               <input
                 id="mailing"
                 class="footer-email-input"
@@ -446,12 +446,13 @@
                 name="mailing"
                 placeholder="E-mail"
               />
-              <button class="footer-email-button" type="submit">
-                <svg class="icon-footer-btn" width="24px" height="24px">
-                  <use href="./images/symbol-defs.svg#icon-send"></use></svg
-                >Підписатися
-              </button>
             </label>
+            <button class="footer-email-button" type="submit">
+              Підписатися
+              <svg class="icon-footer-btn" width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -463,7 +464,7 @@
             <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <h5 class="modal-form-title">Залиште свої дані, ми Вам передзвонимо</h5>
+        <strong class="modal-form-title">Залиште свої дані, ми Вам передзвонимо</strong>
         <form class="modal-form">
           <div class="form-container">
             <label class="form-label" for="name">Ім'я</label>
@@ -492,7 +493,7 @@
               </svg>
             </div>
           </div>
-          <div class="form-container">
+          <div class="form-container-last">
             <label class="form-label" for="comment">Коментар</label>
             <textarea
               class="textarea"

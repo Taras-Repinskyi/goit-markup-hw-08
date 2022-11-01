@@ -534,6 +534,9 @@ header {
 .footer-icon-link:focus {
   background-color: var(--accent-color);
 }
+.footer-nav-container {
+  flex-grow: 1;
+}
 .footer-nav-icon-container {
   margin: 0;
   padding: 0;
@@ -572,11 +575,12 @@ header {
   color: var(--white-color);
 }
 .footer-email-button {
+  display: inline-flex;
+  align-items: center;
   position: relative;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
-  padding-right: 28px;
+  padding-left: 28px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -593,11 +597,8 @@ header {
   background-color: var(--background-button-active);
 }
 .icon-footer-btn {
-  right: 28px;
-  position: absolute;
+  margin-left: 10px;
   fill: var(--white-color);
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 /* Начало портфолио */
@@ -763,6 +764,7 @@ header {
   transform: translate(-50%, -50%) scale(1.5);
 }
 .modal {
+  padding: 40px;
   position: absolute;
   opacity: 1;
   top: 50%;
@@ -797,8 +799,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-title {
-  margin-top: 40px;
-  margin-bottom: 12px;
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15em;
@@ -806,8 +807,7 @@ header {
   letter-spacing: 0.03em;
 }
 .modal-form {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-top: 12px;
 }
 .icon-close-button {
   position: fixed;
@@ -817,10 +817,15 @@ header {
 .form-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-container-last {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 .input-container {
   position: relative;
-  margin-bottom: 10px;
 }
 textarea {
   resize: none;
@@ -852,18 +857,16 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .icon-input {
   position: absolute;
-  margin-right: 12px;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
 }
 .textarea {
   height: 120px;
-  margin-bottom: 20px;
   padding: 12px 16px;
   padding-left: 16px;
   font-size: 12px;
@@ -934,8 +937,8 @@ textarea {
 .send-form-button {
   display: block;
   margin: 0 auto;
+  width: 200px;
   padding: 10px 32px;
-  margin-bottom: 40px;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
