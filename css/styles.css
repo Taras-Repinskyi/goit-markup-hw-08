@@ -891,6 +891,7 @@ textarea {
 .checkbox-label {
   position: relative;
   padding-left: 28px;
+  cursor: pointer;
 }
 .checkbox-label::before {
   content: '';
@@ -917,10 +918,14 @@ textarea {
   opacity: 0;
   left: 0;
   top: 0;
+  border-radius: 2px;
   background-color: var(--accent-color);
 }
 .checkbox-input:checked ~ .icon-checkbox {
   opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contract-link {
