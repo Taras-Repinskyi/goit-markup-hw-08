@@ -578,6 +578,7 @@ header {
   display: inline-flex;
   align-items: center;
   position: relative;
+  margin-left: 12px;
   width: 200px;
   height: 50px;
   padding-left: 28px;
