@@ -91,7 +91,7 @@ img {
   padding-bottom: 94px;
 }
 
-/* Шапка index.html */
+/* Header */
 
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -104,7 +104,7 @@ img {
   align-items: center;
 }
 
-/* Логотип */
+/* Logo */
 
 .logo {
   font-family: 'Raleway';
@@ -120,7 +120,7 @@ img {
   color: var(--logo-black-color);
 }
 
-/* Навігація */
+/* Navigation */
 
 .site-nav {
   display: flex;
@@ -206,9 +206,9 @@ img {
   margin-right: 10px;
 }
 
-/* Герой */
+/* Hero section */
 
-.hero {
+.hero-section {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -222,7 +222,7 @@ img {
   background-size: cover;
   background-color: var(--dackground-dark-color);
 }
-.hero__title {
+.hero-section__title {
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -235,7 +235,7 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
-.hero__button {
+.hero-section__button {
   display: inline-block;
   padding: 10px 32px;
   min-width: 216px;
@@ -245,24 +245,19 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-hero:focus,
-.button-hero:hover {
-  background-color: var(--background-button-active);
-}
+/* Advantages section*/
 
-/* section наші переваги */
-
-.advantages__list {
+.advantages-section__list {
   display: flex;
   margin: 0 auto;
 }
-.advantages__item {
+.advantages-section__item {
   width: 270px;
 }
-.advantages__item:not(:last-child) {
+.advantages-section__item:not(:last-child) {
   margin-right: 30px;
 }
-.advantages__icon-container {
+.advantages-section__icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +267,7 @@ img {
   background: var(--dackground-grey-color);
   border-radius: 4px;
 }
-.advantages__title {
+.advantages-section__title {
   margin: 0 auto;
   font-weight: 700;
   font-size: 14px;
@@ -280,22 +275,22 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantages__text {
+.advantages-section__text {
   margin-top: 10px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.advantages__text::first-letter {
+.advantages-section__text::first-letter {
   text-transform: uppercase;
 }
 
-/* Секція чим ми займаємось */
+/* Work-area section */
 
-.we-do-section {
+.work-area-section {
   padding-top: 0;
 }
-.we-do-section-title {
+.work-area-section__title {
   margin: 0 auto;
   margin-bottom: 50px;
   font-size: 36px;
@@ -303,20 +298,17 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.we-do-section-title::first-letter {
+.work-area-section__title::first-letter {
   text-transform: uppercase;
 }
-.we-do-list {
+.work-area-section__list {
   display: flex;
   gap: 30px;
 }
-.we-do-item {
-  display: flex;
-}
-.we-do-thumb {
+.work-area-section__thumb {
   position: relative;
 }
-.we-do-img-text {
+.work-area-section__text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -324,7 +316,8 @@ img {
   color: var(--white-color);
   text-transform: uppercase;
 }
-.text-thumb {
+.work-area-section__text-thumb {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,36 +325,34 @@ img {
   left: 0px;
   width: 100%;
   height: 70px;
-  position: absolute;
   background: rgba(47, 48, 58, 0.8);
 }
 
-/*Наша команда  */
+/*Team section*/
 
-.team-title-container {
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-.our-team-section {
+.team-section {
   text-align: center;
   background-color: var(--dackground-grey-color);
 }
-.our-team-section-title {
+.team-card__container {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.team-section__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
 }
-.our-team-section-title::first-letter {
+.team-section__title::first-letter {
   text-transform: uppercase;
 }
-.our-team-list {
+.team-card__list {
   display: flex;
   gap: 30px;
 }
-.section-title-team {
+.team-card__name {
   margin-bottom: 10px;
   margin-top: 0;
   font-weight: 500;
@@ -372,7 +363,7 @@ img {
   text-align: center;
   justify-content: center;
 }
-.job-title {
+.team-card__position {
   margin: 0 auto;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -382,25 +373,22 @@ img {
   justify-content: center;
   color: var(--secondary-text-color);
 }
-.team-img {
-  display: flex;
-}
-.job-title-uppercase {
+.team-card__position-uppercase {
   text-transform: uppercase;
 }
-.team-card {
+.team-card__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
 }
-.team-list {
+.team-social__list {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 16px;
 }
-.team-icon-link {
+.team-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,34 +401,34 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icon-link:hover,
-.team-icon-link:focus {
+.team-social__link:hover,
+.team-social__link:focus {
   fill: var(--white-color);
   background-color: var(--accent-color);
 }
 
 /* Клієнти */
 
-.client-title {
+.clients-section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.client-icon-list {
+.clients-section__list {
   display: flex;
   margin-top: 50px;
 }
-.client-icon-item {
+.clients-section__item {
   width: 170px;
   height: 92px;
   margin-right: 30px;
 }
-.client-icon-item:last-child {
+.clients-section__item:last-child {
   margin-right: auto;
 }
-.client-icon-link {
+.clients-section__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -455,21 +443,24 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: none;
 }
-.client-icon-link:focus,
-.client-icon-link:hover {
+.clients-section__link:focus,
+.clients-section__link:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
 
 /* Подвал */
 
-.footer-container {
+.footer {
   background-color: var(--dackground-dark-color);
   padding: 60px 0;
 }
 .footer-control-container {
   display: flex;
   align-items: baseline;
+}
+.footer-nav-container {
+  flex-grow: 1;
 }
 .footer-logo {
   display: inline-block;
@@ -483,19 +474,22 @@ img {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.footer-contacts {
+.footer-nav__contacts {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-item {
+.footer-nav__item {
   margin: 0 auto;
 }
-.footer-item:not(:last-child) {
+.footer-nav__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-icon-title {
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -504,17 +498,14 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
-.footer-icon-container {
-  margin-left: 70px;
-}
-.footer-icon-list {
+.footer-social__list {
   display: flex;
   gap: 10px;
 }
-.footer-icon-item:last-child {
+.footer-social__item:last-child {
   margin-right: auto;
 }
-.footer-icon-link {
+.footer-social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -529,12 +520,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: none;
 }
-.footer-icon-link:hover,
-.footer-icon-link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
   background-color: var(--accent-color);
-}
-.footer-nav-container {
-  flex-grow: 1;
 }
 .footer-nav-icon-container {
   margin: 0;
