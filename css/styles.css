@@ -66,11 +66,11 @@ img {
 
 /* Шапка index.html */
 
-header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.page-header__container {
   display: flex;
   flex-direction: row;
   text-align: center;
