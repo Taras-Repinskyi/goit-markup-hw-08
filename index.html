@@ -421,19 +421,19 @@
             </ul>
           </div>
           <form class="footer-form" autocomplete="off">
-            <p class="footer-email-title">Підпишіться на розсилку</p>
+            <p class="footer-form__title">Підпишіться на розсилку</p>
             <label for="mailing">
               <input
                 id="mailing"
-                class="footer-email-input"
+                class="footer-form__input"
                 type="email"
                 name="mailing"
                 placeholder="E-mail"
               />
             </label>
-            <button class="footer-email-button main-button" type="submit">
+            <button class="footer-form__button main-button" type="submit">
               Підписатися
-              <svg class="icon-footer-btn" width="24px" height="24px">
+              <svg class="footer-form__icon" width="24px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
@@ -442,45 +442,45 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button data-modal-close type="button" class="modal-close-button">
-          <svg class="icon-close-button" width="18px" height="18px">
+      <div class="index-modal">
+        <button data-modal-close type="button" class="index-modal__close-button">
+          <svg class="index-modal__icon-close" width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <strong class="modal-form-title">Залиште свої дані, ми Вам передзвонимо</strong>
-        <form class="modal-form">
-          <div class="form-container">
-            <label class="form-label" for="name">Ім'я</label>
-            <div class="input-container">
-              <input class="form-input" id="name" type="text" name="user-name" />
-              <svg class="icon-input" width="18px" height="18px">
+        <strong class="index-modal__title">Залиште свої дані, ми Вам передзвонимо</strong>
+        <form class="index-modal__form">
+          <div class="index-modal__form-container">
+            <label class="index-modal__label" for="name">Ім'я</label>
+            <div class="index-modal__input-container">
+              <input class="index-modal__input" id="name" type="text" name="user-name" />
+              <svg class="index-modal__icon-input" width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#icon-input-name"></use>
               </svg>
             </div>
           </div>
-          <div class="form-container">
-            <label class="form-label" for="tel">Телефон</label>
-            <div class="input-container">
-              <input class="form-input" id="tel" type="tel" name="tel" />
-              <svg class="icon-input" width="18px" height="18px">
+          <div class="index-modal__form-container">
+            <label class="index-modal__label" for="tel">Телефон</label>
+            <div class="index-modal__input-container">
+              <input class="index-modal__input" id="tel" type="tel" name="tel" />
+              <svg class="index-modal__icon-input" width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#icon-input-tel"></use>
               </svg>
             </div>
           </div>
-          <div class="form-container">
-            <label class="form-label" for="mail">Пошта</label>
-            <div class="input-container">
-              <input class="form-input" id="mail" type="email" name="mail" />
-              <svg class="icon-input" width="18px" height="18px">
+          <div class="index-modal__form-container">
+            <label class="index-modal__label" for="mail">Пошта</label>
+            <div class="index-modal__input-container">
+              <input class="index-modal__input" id="mail" type="email" name="mail" />
+              <svg class="index-modal__icon-input" width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#icon-input-mail"></use>
               </svg>
             </div>
           </div>
-          <div class="form-container-last">
-            <label class="form-label" for="comment">Коментар</label>
+          <div class="index-modal__last-form-container">
+            <label class="index-modal__label" for="comment">Коментар</label>
             <textarea
-              class="textarea"
+              class="index-modal__textarea"
               name="comment"
               id="comment"
               cols="30"
@@ -488,19 +488,22 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="checkbox-field">
-            <label class="checkbox-label" for="contract">
+          <div class="index-modal__checkbox-field">
+            <label class="index-modal__checkbox-label" for="contract">
               <input
-                class="checkbox-input visually-hidden"
+                class="index-modal__checkbox-input visually-hidden"
                 type="checkbox"
                 name="contract-terms"
-                id="contract" />Погодшуюся з розсилкою та приймаю<a class="contract-link" href="#">
+                id="contract" />Погодшуюся з розсилкою та приймаю<a
+                class="index-modal__contract-link"
+                href="#"
+              >
                 Умови договору</a
-              ><svg class="icon-checkbox" width="16px" height="15px">
+              ><svg class="index-modal__icon-checkbox" width="16px" height="15px">
                 <use href="./images/symbol-defs.svg#icon-checked"></use></svg
             ></label>
           </div>
-          <button class="send-form-button main-button" type="submit">Відправити</button>
+          <button class="index-modal__send-button main-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
