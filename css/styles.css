@@ -209,7 +209,7 @@ img {
 
 /* Hero section */
 
-.hero-section {
+.hero {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -223,7 +223,7 @@ img {
   background-size: cover;
   background-color: var(--dackground-dark-color);
 }
-.hero-section__title {
+.hero__title {
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -236,7 +236,7 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
-.hero-section__button {
+.hero__button {
   display: inline-block;
   padding: 10px 32px;
   min-width: 216px;
@@ -247,17 +247,17 @@ img {
 
 /* Advantages section*/
 
-.advantages-section__list {
+.benefits__list {
   display: flex;
   margin: 0 auto;
 }
-.advantages-section__item {
+.benefits__item {
   width: 270px;
 }
-.advantages-section__item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
-.advantages-section__icon-container {
+.benefits__icon--container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,7 +267,7 @@ img {
   background: var(--dackground-grey-color);
   border-radius: 4px;
 }
-.advantages-section__title {
+.benefits__title {
   margin: 0 auto;
   font-weight: 700;
   font-size: 14px;
@@ -275,22 +275,19 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantages-section__text {
+.benefits__text {
   margin-top: 10px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.advantages-section__text::first-letter {
-  text-transform: uppercase;
-}
 
 /* Work-area section */
 
-.work-area-section {
+.work-area {
   padding-top: 0;
 }
-.work-area-section__title {
+.work-area__title {
   margin: 0 auto;
   margin-bottom: 50px;
   font-size: 36px;
@@ -298,17 +295,14 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.work-area-section__title::first-letter {
-  text-transform: uppercase;
-}
-.work-area-section__list {
+.work-area__list {
   display: flex;
   gap: 30px;
 }
-.work-area-section__thumb {
+.work-area__thumb {
   position: relative;
 }
-.work-area-section__text {
+.work-area__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -316,7 +310,7 @@ img {
   color: var(--white-color);
   text-transform: uppercase;
 }
-.work-area-section__text-thumb {
+.work-area__subtitle-thumb {
   position: absolute;
   display: flex;
   align-items: center;
