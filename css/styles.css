@@ -675,7 +675,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-.portfolio-overlay-thumb {
+.portfolio-overlay__thumb {
   display: flex;
   align-items: center;
   top: 0;
@@ -689,7 +689,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-overlay-text {
+.portfolio-overlay__text {
   overflow: hidden;
   margin-left: 16px;
   margin-right: 32px;
@@ -698,10 +698,10 @@ img {
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
 }
-.portfolio-card__link:hover .portfolio-overlay-thumb {
+.portfolio-card__link:hover .portfolio-overlay__thumb {
   transform: translateY(0);
 }
-.portfolio-card__link:focus .portfolio-overlay-thumb {
+.portfolio-card__link:focus .portfolio-overlay__thumb {
   transform: translateY(0);
 }
 
