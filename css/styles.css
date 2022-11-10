@@ -324,7 +324,7 @@ img {
 
 /*Team section*/
 
-.team-section {
+.team {
   text-align: center;
   background-color: var(--dackground-grey-color);
 }
@@ -332,14 +332,14 @@ img {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-.team-section__title {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
 }
-.team-section__title::first-letter {
+.team__title::first-letter {
   text-transform: uppercase;
 }
 .team-card__list {
@@ -403,26 +403,26 @@ img {
 
 /* Клієнти */
 
-.clients-section__title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.clients-section__list {
+.clients__list {
   display: flex;
   margin-top: 50px;
 }
-.clients-section__item {
+.clients__item {
   width: 170px;
   height: 92px;
   margin-right: 30px;
 }
-.clients-section__item:last-child {
+.clients__item:last-child {
   margin-right: auto;
 }
-.clients-section__link {
+.clients__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -437,8 +437,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: none;
 }
-.clients-section__link:focus,
-.clients-section__link:hover {
+.clients__link:focus,
+.clients__link:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -722,7 +722,7 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.5);
 }
-.index-modal {
+.modal {
   padding: 40px;
   position: absolute;
   opacity: 1;
@@ -739,7 +739,7 @@ img {
   transition-property: transform, opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.index-modal__close-button {
+.modal__close-button {
   position: fixed;
   top: 8px;
   right: 8px;
@@ -750,19 +750,19 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-.index-modal__close-button:hover,
-.index-modal__close-button:focus > svg {
+.modal__close-button:hover,
+.modal__close-button:focus > svg {
   fill: var(--accent-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.index-modal__icon-close {
+.modal__icon-close {
   position: fixed;
   top: 14px;
   right: 14px;
 }
-.index-modal__title {
+.modal__title {
   display: block;
   font-weight: 700;
   font-size: 20px;
@@ -770,45 +770,45 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.index-modal__form {
+.modal__form {
   margin-top: 12px;
 }
-.index-modal__form-container {
+.modal__form--container {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.index-modal__label {
+.modal__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
   margin-bottom: 4px;
 }
-.index-modal__last-form-container {
+.modal__last-form--container {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-.index-modal__input-container {
+.modal__input--container {
   position: relative;
 }
-.index-modal__input {
+.modal__input {
   width: 100%;
   padding: 12px 20px 12px 44px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
 }
-.index-modal__input:hover + .index-modal__icon-input,
-.index-modal__input:focus + .index-modal__icon-input {
+.modal__input:hover + .modal__icon--input,
+.modal__input:focus + .modal__icon--input {
   fill: var(--accent-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.index-modal__input:hover,
-.index-modal__input:focus {
+.modal__input:hover,
+.modal__input:focus {
   border-color: var(--accent-color);
   color: var(--body-text-color);
   transition-property: border-color, color;
@@ -816,13 +816,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.index-modal__icon-input {
+.modal__icon--input {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
 }
-.index-modal__textarea {
+.modal__textarea {
   height: 120px;
   padding: 12px 16px;
   padding-left: 16px;
@@ -835,26 +835,26 @@ img {
   cursor: pointer;
   resize: none;
 }
-.index-modal__textarea:hover,
-.index-modal__textarea:focus {
+.modal__textarea:hover,
+.modal__textarea:focus {
   border-color: var(--accent-color);
   color: var(--body-text-color);
   transition-property: border-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.index-modal__checkbox-field {
+.modal__checkbox-field {
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.index-modal__checkbox-label {
+.modal__checkbox--label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
 }
-.index-modal__checkbox-label::before {
+.modal__checkbox--label::before {
   content: '';
   position: absolute;
   top: 0;
@@ -866,7 +866,7 @@ img {
   cursor: pointer;
 }
 
-.index-modal__checkbox-input {
+.modal__checkbox--input {
   appearance: none;
   left: 0;
   top: 0;
@@ -874,7 +874,7 @@ img {
   width: 16px;
   height: 15px;
 }
-.index-modal__icon-checkbox {
+.modal__icon--checkbox {
   position: absolute;
   opacity: 0;
   left: 0;
@@ -882,24 +882,24 @@ img {
   border-radius: 2px;
   background-color: var(--accent-color);
 }
-.index-modal__checkbox-input:checked ~ .index-modal__icon-checkbox {
+.modal__checkbox--input:checked ~ .modal__icon--checkbox {
   opacity: 1;
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.index-modal__contract-link {
+.modal__contract-link {
   color: var(--accent-color);
 }
-.index-modal__send-button {
+.modal__send-button {
   display: block;
   padding: 10px 32px;
   margin: 0 auto;
   width: 200px;
 }
-.index-modal__send-button:hover,
-.index-modal__send-button:focus {
+.modal__send-button:hover,
+.modal__send-button:focus {
   background-color: var(--background-button-active);
   transition-property: background-color;
   transition-duration: 250ms;
