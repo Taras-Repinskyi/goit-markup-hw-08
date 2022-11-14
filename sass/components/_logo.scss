@@ -6,18 +6,24 @@
     letter-spacing: 0.03em;
 }
 
+@mixin logoColor ($color) {
+    color: $color;
+}
+
 .logo__text--web {
-    color: $accent-color;
+    @include logoColor($accent-color);
 }
 
 .logo__text--studio {
-    color: $logo-black-color;
+    @include logoColor($logo-black-color);
 }
+
+.logo__text--studio-white {
+    @include logoColor($white-color);
+}
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 20px;
 }
 
-.logo__text--studio-white {
-    color: $white-color;
-}
