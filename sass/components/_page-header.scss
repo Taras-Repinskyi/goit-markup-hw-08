@@ -34,7 +34,7 @@
     transition-duration: 250ms;
     transition-timing-function: $cubic-time;
 
-    &::after {
+    &:not(.site-nav__link--active)::after {
         content: '';
         position: absolute;
         width: 100%;
@@ -47,8 +47,8 @@
         transform: scaleX(0);
     }
 
-    &:hover::after,
-    &:focus::after {
+    &:not(.site-nav__link--active):hover::after,
+    &:not(.site-nav__link--active):focus::after {
         opacity: 1;
         transform: scaleX(1);
         transition-property: opacity, color, transform;

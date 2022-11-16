@@ -1,12 +1,4 @@
-.clients__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.clients__list {
+.clients {
     display: flex;
     margin-top: 50px;
 }
@@ -17,7 +9,7 @@
     margin-right: 30px;
 
     &:last-child {
-            margin-right: auto;
+            margin-right: 0;
         }
     }
 

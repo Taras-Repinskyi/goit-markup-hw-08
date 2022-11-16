@@ -1,4 +1,4 @@
-.benefits__list {
+.benefits {
     display: flex;
     margin: 0 auto;
 }
@@ -10,7 +10,7 @@
         margin-right: 30px;
 }}
 
-.benefits__icon--container {
+.benefits__icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,15 +19,6 @@
     margin-bottom: 30px;
     background: $dackground-grey-color;
     border-radius: 4px;
-}
-
-.benefits__title {
-    margin: 0 auto;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 }
 
 .benefits__text {
