@@ -4,21 +4,18 @@
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
+    color: $accent-color;
 }
 
 @mixin logoColor ($color) {
     color: $color;
 }
 
-.logo__text--web {
-    @include logoColor($accent-color);
-}
-
-.logo__text--studio {
+.logo__dark {
     @include logoColor($logo-black-color);
 }
 
-.logo__text--studio-white {
+.logo__light {
     @include logoColor($white-color);
 }
 

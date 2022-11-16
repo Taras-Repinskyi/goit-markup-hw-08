@@ -8,14 +8,14 @@ p {
   padding: 0;
 }
 
-.list {
+ul {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
 
-.link {
+a {
   text-decoration: none;
   color: inherit;
   fill: currentColor;
@@ -26,7 +26,7 @@ p {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover, .link:focus {
+a:hover, a:focus {
   color: #2196f3;
 }
 
@@ -415,17 +415,14 @@ summary {
   font-size: 26px;
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
-}
-
-.logo__text--web {
   color: #2196f3;
 }
 
-.logo__text--studio {
+.logo__dark {
   color: #000000;
 }
 
-.logo__text--studio-white {
+.logo__light {
   color: #ffffff;
 }
 
@@ -452,7 +449,7 @@ summary {
           align-items: center;
 }
 
-.site-nav {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,6 +460,59 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 93px;
+  gap: 50px;
+  font-weight: 500;
+  line-height: 1.1428571429;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.site-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  bottom: -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+.site-nav__link:hover::after, .site-nav__link:focus::after {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-property: opacity, color, -webkit-transform;
+  transition-property: opacity, color, -webkit-transform;
+  transition-property: opacity, color, transform;
+  transition-property: opacity, color, transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav__link--active {
@@ -483,59 +533,6 @@ summary {
   background-color: #2196f3;
   border-radius: 2px;
   bottom: -1px;
-}
-
-.site-nav__link--inactive {
-  position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.site-nav__link--inactive::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  bottom: -1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-}
-.site-nav__link--inactive:hover::after, .site-nav__link--inactive:focus::after {
-  opacity: 1;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition-property: opacity, color, -webkit-transform;
-  transition-property: opacity, color, -webkit-transform;
-  transition-property: opacity, color, transform;
-  transition-property: opacity, color, transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
-  gap: 50px;
-  font-weight: 500;
-  line-height: 1.1428571429;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
 }
 
 .header-contacts {
