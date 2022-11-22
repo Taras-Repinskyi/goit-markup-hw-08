@@ -1,21 +1,21 @@
 .benefits {
-    display: flex;
+    // display: flex;
     margin: 0 auto;
 }
 
 .benefits__item {
-    width: 270px;
+    // width: 270px;
 
     &:not(:last-child) {
         margin-right: 30px;
 }}
 
 .benefits__icon-container {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
-    height: 120px;
+    // width: 270px;
+    // height: 120px;
     margin-bottom: 30px;
     background: $dackground-grey-color;
     border-radius: 4px;

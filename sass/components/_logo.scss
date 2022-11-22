@@ -1,26 +1,35 @@
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    color: $accent-color;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: $accent-color;
 }
 
-@mixin logoColor ($color) {
-    color: $color;
+@media screen and (min width: 480px) {
+  .logo {
+    color: red;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
+@mixin logoColor($color) {
+  color: $color;
 }
 
 .logo__dark {
-    @include logoColor($logo-black-color);
+  @include logoColor($logo-black-color);
 }
 
 .logo__light {
-    @include logoColor($white-color);
+  @include logoColor($white-color);
 }
 
 .footer-logo {
-    display: inline-block;
-    margin-bottom: 20px;
+  // display: inline-block;
+  margin-bottom: 20px;
 }
-
