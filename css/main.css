@@ -470,15 +470,25 @@ img {
 }
 
 .logo {
-  position: absolute;
-  padding-top: 16px;
-  padding-bottom: 16px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    position: absolute;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -603,6 +613,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .header-contacts__link {
+    position: fixed;
+    right: 15px;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 250ms;
@@ -641,25 +653,28 @@ img {
     color: #2196f3;
   }
 }
-@media screen and (mix-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-contacts__link--mobile {
-    padding-top: 10px;
+    right: 30px;
+    top: 45px;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .header-contacts__link--mobile .header-contacts__icon {
+  .header-contacts__icon {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header-contacts__link--mobile .header-contacts__icon {
+  .header-contacts__icon {
     max-width: 100%;
     max-height: 100%;
     margin-right: 10px;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .header-contacts__link--mobile .page-header__menu-container {
+  .page-header__menu-container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -677,38 +692,33 @@ img {
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) linear;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) linear;
   }
-  .header-contacts__link--mobile .page-header__menu-container.is-open {
+  .page-header__menu-container.is-open {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
 }
 @media screen and (min-width: 768px) {
-  .header-contacts__link--mobile .page-header__menu-container {
+  .page-header__menu-container {
     height: 100%;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .header-contacts__link--mobile .header-social {
+  .header-social {
     position: absolute;
     bottom: 48px;
     left: 40px;
   }
 }
 @media screen and (min-width: 768px) {
-  .header-contacts__link--mobile .header-social {
+  .header-social {
     display: none;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .header-contacts__link--mobile .header-social__item {
+  .header-social__item {
     display: inline;
     font-weight: 500;
     font-size: 18px;
@@ -718,12 +728,13 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .header-contacts__link--mobile .header-social__item {
+  .header-social__item {
     display: none;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .header-contacts__link--mobile .header-social__item--line {
+  .header-social__item--line {
     bottom: 48px;
     margin-left: 10px;
     margin-right: 10px;
@@ -735,7 +746,7 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .header-contacts__link--mobile .header-social__item--line {
+  .header-social__item--line {
     display: none;
   }
 }
@@ -776,6 +787,8 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
+    gap: 50px;
+    margin-left: 87px;
     font-size: 14px;
     line-height: 1.1428571429;
   }
@@ -809,11 +822,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .site-nav__link {
-    position: relative;
-    margin-left: 88px;
     padding-top: 32px;
     padding-bottom: 32px;
-    gap: 50px;
     display: block;
     -webkit-transition-property: color;
     transition-property: color;

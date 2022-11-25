@@ -1,7 +1,19 @@
 .logo {
-  position: absolute;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    color: $accent-color;
+  }
+
+  // position: absolute;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 24px;
@@ -10,8 +22,6 @@
   color: $accent-color;
 
   @media screen and (min-width: 768px) {
-    // padding-top: 16px;
-    // padding-bottom: 16px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 24px;
