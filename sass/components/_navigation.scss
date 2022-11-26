@@ -3,9 +3,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 }
 
@@ -30,15 +27,21 @@
     margin: 0;
     gap: 50px;
     margin-left: 87px;
+    font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
+    color: $body-text-color;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin: 0;
+    gap: 50px;
     margin-left: 93px;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -88,6 +91,7 @@
 
   @media screen and (min-width: 1200px) {
     position: relative;
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     transition-property: color;
