@@ -549,11 +549,6 @@ img {
             align-items: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .page-header__container {
-    width: 100%;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .header-contacts {
@@ -939,6 +934,8 @@ img {
 }
 
 .hero {
+  width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -950,8 +947,20 @@ img {
   background-size: cover;
   background-color: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
 
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-img@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img@2.jpg);
+  }
+}
 .hero__title {
+  width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
@@ -966,7 +975,9 @@ img {
 }
 
 .hero__button {
+  display: inline-block;
   padding: 10px 32px;
+  min-width: 216px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -1706,7 +1717,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-.no1,
 .no2,
 .no3,
 .no4,
