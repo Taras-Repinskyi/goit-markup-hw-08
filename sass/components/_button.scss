@@ -62,3 +62,13 @@
     padding: 10px 32px;
   }
 }
+
+.footer-form__button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  // margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  padding-left: 28px;
+}
