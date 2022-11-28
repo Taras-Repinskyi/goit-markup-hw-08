@@ -1,5 +1,4 @@
 .main-button {
-  display: none;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -49,4 +48,17 @@
 
 .icon-cross {
   display: none;
+}
+
+.hero__button {
+  height: 50px;
+  display: inline-block;
+  padding: 10px 24px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }
