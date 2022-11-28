@@ -1,12 +1,10 @@
 .page-header {
   border-bottom: 1px solid #ececec;
-
-  @media screen and (min-width: 768px) {
-  }
 }
 
 .page-header__container {
   @media screen and (max-width: 767px) {
+    height: 60px;
     justify-content: space-between;
   }
 
