@@ -43,9 +43,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
