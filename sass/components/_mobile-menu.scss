@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     background-color: $white-color;
+    overflow-y: scroll;
     transform: translateY(-100%);
     transition-property: transform;
     transition-duration: 250ms;

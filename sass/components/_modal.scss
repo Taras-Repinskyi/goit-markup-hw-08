@@ -1,6 +1,6 @@
 .modal {
   width: calc(100% - 15px);
-  height: calc(100% - 93px);
+  height: auto;
   padding: 40px;
   position: absolute;
   opacity: 1;
@@ -15,9 +15,14 @@
   transition-property: transform, opacity;
   transition-timing-function: $cubic-time;
 
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 303px);
+    height: auto;
+  }
+
   @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
+    width: calc(100% - 462px);
+    height: auto;
   }
 }
 
