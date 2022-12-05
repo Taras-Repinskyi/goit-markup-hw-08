@@ -5,7 +5,8 @@
   margin-right: auto;
   text-align: center;
   padding: 118px 0;
-  background-image: $gradient, url(../../images/index/jpg/hero/hero-mobile-img.jpg);
+  background-image: $gradient, url(../../images/index/jpg/hero/hero-mobile-img.jpg) 1x,
+    url(../../images/index/jpg/hero/hero-mobile-img@2.jpg) 2x;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
