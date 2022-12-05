@@ -116,7 +116,30 @@
           <ul class="work-area">
             <li>
               <div class="work-area__thumb">
-                <img src="./images/box1.jpg" width="370" alt="друк html коду на ПК" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/index/jpg/work-area/work-area-img1.jpg    1x,
+                      ./images/index/jpg/work-area/work-area-img1-@2.jpg 2x
+                    "
+                    type="image/jpeg"
+                    width="370px"
+                  />
+                  <source
+                    srcset="
+                      ./images/index/webp/work-area/work-area-img1.webp    1x,
+                      ./images/index/webp/work-area/work-area-img1-@2.webp 2x
+                    "
+                    type="image/webp"
+                    width="370"
+                  />
+                  <img
+                    src="./images/index/jpg/work-area/work-area-img1.jpg"
+                    width="370"
+                    alt="Друк html коду на ПК"
+                  />
+                </picture>
+
                 <div class="work-area__subtitle-thumb">
                   <p class="work-area__subtitle">Десктопні додатки</p>
                 </div>
@@ -124,11 +147,28 @@
             </li>
             <li>
               <div class="work-area__thumb">
-                <img
-                  src="./images/box2.jpg"
-                  width="370"
-                  alt="макети мобілних додатків на екрані ноутбуку"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/index/jpg/work-area/work-area-img2.jpg    1x,
+                      ./images/index/jpg/work-area/work-area-img2-@2.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/index/webp/work-area/work-area-img2.webp    1x,
+                      ./images/index/webp/work-area/work-area-img2-@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/index/jpg/work-area/work-area-img2.jpg"
+                    width="370"
+                    alt="Макети мобілних додатків на екрані ноутбуку"
+                  />
+                </picture>
+
                 <div class="work-area__subtitle-thumb">
                   <p class="work-area__subtitle">Мобільні додатки</p>
                 </div>
@@ -136,13 +176,27 @@
             </li>
             <li>
               <div class="work-area__thumb">
-                <img
-                  src="./images/box3.jpg"
-                  width="370"
-                  alt="різнокольоровий шестигранник на екрані планшету"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/index/jpg/work-area/work-area-img3.jpg    1x,
+                      ./images/index/jpg/work-area/work-area-img3-@2.jpg 2x
+                    "
+                    type="image/jpeg" />
+                  <source
+                    srcset="
+                      ./images/index/webp/work-area/work-area-img3.webp    1x,
+                      ./images/index/webp/work-area/work-area-img3-@2.webp 2x
+                    "
+                    type="image/webp" />
+                  <img
+                    src="./images/index/jpg/work-area/work-area-img3.jpg"
+                    width="370"
+                    alt="Різнокольоровий шестигранник на екрані планшету"
+                /></picture>
+
                 <div class="work-area__subtitle-thumb">
-                  <p class="work-area__subtitle">дизайнерські рішення</p>
+                  <p class="work-area__subtitle">Дизайнерські рішення</p>
                 </div>
               </div>
             </li>
@@ -154,12 +208,57 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="./images/team-card1-270.jpg"
-                width="270px"
-                alt="фото Ігора Дем'яненка"
-                srcset="./images/team-card1-270.jpg 1x, ./image/team-card1-270@2.jpg 2x"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card1-450.webp   1x,
+                    ./images/index/webp/team/team-card1-450@2.webp 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card1-354.webp   1x,
+                    ./images/index/webp/team/team-card1-354@2.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card1-270.webp   1x,
+                    ./images/index/webp/team/team-card1-270@2.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card1-450.jpg   1x,
+                    ./images/index/webp/team/team-card1-450@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card1-354.jpg   1x,
+                    ./images/index/webp/team/team-card1-354@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card1-270.jpg   1x,
+                    ./images/index/webp/team/team-card1-270@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/index/jpg/team/team-card1-354.jpg" alt="Фото Ігора Дем'яненка" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Prodact Designer</p>
@@ -196,12 +295,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="./images/team-card2-270.jpg 1x, ./image/team-card2-270@2.jpg 2x"
-                src="./images/team-card2.jpg"
-                width="270"
-                alt="фото Ольги Рєпіной"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card2-450.webp   1x,
+                    ./images/index/webp/team/team-card2-450@2.webp 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card2-354.webp   1x,
+                    ./images/index/webp/team/team-card2-354@2.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card2-270.webp   1x,
+                    ./images/index/webp/team/team-card2-270@2.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card2-450.jpg   1x,
+                    ./images/index/webp/team/team-card2-450@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card2-354.jpg   1x,
+                    ./images/index/webp/team/team-card2-354@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card2-270.jpg   1x,
+                    ./images/index/webp/team/team-card2-270@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/index/jpg/team/team-card2-354.jpg" alt="Фото Ольги Рєпіної" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -238,12 +382,58 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="./images/team-card3-270.jpg 1x, ./image/team-card3-270@2.jpg 2x"
-                src="./images/team-card3.jpg"
-                width="270"
-                alt="фото Миколи Тарасова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card3-450.webp   1x,
+                    ./images/index/webp/team/team-card3-450@2.webp 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card3-354.webp   1x,
+                    ./images/index/webp/team/team-card3-354@2.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card3-270.webp   1x,
+                    ./images/index/webp/team/team-card3-270@2.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card3-450.jpg   1x,
+                    ./images/index/webp/team/team-card3-450@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card3-354.jpg   1x,
+                    ./images/index/webp/team/team-card3-354@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card3-270.jpg   1x,
+                    ./images/index/webp/team/team-card3-270@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="type"
+                  ="image/jpeg"
+                />
+                <img src="./images/index/jpg/team/team-card3-354.jpg" alt="Фото Ігора Дем'яненка" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -280,12 +470,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                srcset="./images/team-card4-270.jpg 1x, ./image/team-card4-270@2.jpg 2x"
-                src="./images/team-card4.jpg"
-                width="270"
-                alt="фото Михайла Єрмакова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card4-450.webp   1x,
+                    ./images/index/webp/team/team-card4-450@2.webp 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card4-354.webp   1x,
+                    ./images/index/webp/team/team-card4-354@2.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card4-270.webp   1x,
+                    ./images/index/webp/team/team-card4-270@2.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card4-450.jpg   1x,
+                    ./images/index/webp/team/team-card4-450@2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card4-354.jpg   1x,
+                    ./images/index/webp/team/team-card4-354@2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/index/webp/team/team-card4-270.jpg   1x,
+                    ./images/index/webp/team/team-card4-270@2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/index/jpg/team/team-card4-354.jpg" alt="Фото Ігора Дем'яненка" />
+              </picture>
               <div class="team__container">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -398,7 +633,7 @@
             </address>
           </div>
           <div class="footer-social">
-            <p class="footer-social__title">приєднуйтесь</p>
+            <p class="footer-social__title">Приєднуйтесь</p>
             <ul class="footer-social__list">
               <li class="footer-social__item">
                 <a class="footer-social__link" href="#">
