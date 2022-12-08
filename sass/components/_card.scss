@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
+
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
 }
 
 .card__item {
@@ -10,6 +14,10 @@
   margin-bottom: 30px;
   flex-wrap: wrap;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
 
   @media screen and (min-width: 1200px) {
     &:nth-child(3n) {
