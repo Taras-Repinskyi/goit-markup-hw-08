@@ -52,7 +52,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: $gradient, url(../../images/index/jpg/hero/hero-desktop@2.jpg);
+      background-image: $gradient, url(../images/index/jpg/hero/hero-desktop@2.jpg);
     }
   }
 }
