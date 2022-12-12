@@ -40,7 +40,9 @@
 }
 
 .card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: $cubic-time;
@@ -59,12 +61,7 @@
 }
 
 .card__text--container-big {
-  @media screen and(min-width:768px) {
-    height: 146px;
-  }
-  @media screen and (min-width: 1200px) {
-    height: auto;
-  }
+  flex-grow: 1;
 }
 
 .card__product-name {
