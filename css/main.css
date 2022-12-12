@@ -443,6 +443,12 @@ img {
   height: 50px;
   padding-left: 28px;
 }
+@media screen and (max-width: 1199px) {
+  .footer-form__button {
+    margin: auto;
+    margin-top: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-form__button {
     margin-left: 12px;
@@ -1436,6 +1442,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer-form__title {
   font-weight: 700;
   font-size: 14px;
@@ -1443,6 +1457,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__title {
+    margin-right: auto;
+  }
 }
 
 .footer-form__input {

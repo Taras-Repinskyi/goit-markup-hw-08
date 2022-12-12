@@ -129,6 +129,12 @@
   }
 }
 
+.footer-form__container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer-form__title {
   font-weight: 700;
   font-size: 14px;
@@ -136,6 +142,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }
 
 .footer-form__input {
