@@ -1,4 +1,5 @@
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   opacity: 1;
   top: 0;
@@ -20,5 +21,4 @@
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.5);
-  overflow-y: hidden;
 }
