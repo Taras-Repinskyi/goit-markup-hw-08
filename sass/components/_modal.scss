@@ -1,5 +1,6 @@
 .modal {
   width: calc(100% - 15px);
+  max-width: 450px;
   height: auto;
   padding: 40px;
   position: absolute;
@@ -21,9 +22,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: auto;
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
   }
 }
 
