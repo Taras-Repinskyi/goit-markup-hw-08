@@ -1,4 +1,5 @@
 .hero {
+  max-width: 1600px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -10,21 +11,30 @@
   background-size: cover;
   background-color: $dackground-dark-color;
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+
+@media screen and (min-width: 320px) {
   .hero {
-    background-image: $gradient, url(../images/index/jpg/hero/hero-mobile@2.jpg);
+    background-image: $gradient, url(../images/index/jpg/hero/hero-mobile.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: $gradient, url(../images/index/jpg/hero/hero-mobile@2.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
   .hero {
     background-image: $gradient, url(../images/index/jpg/hero/hero-tablet.jpg);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -34,14 +44,13 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero {
-    max-width: 1600px;
     background-image: $gradient, url(../images/index/jpg/hero/hero-desktop.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
